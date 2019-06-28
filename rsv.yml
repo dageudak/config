@@ -1,0 +1,23 @@
+   
+spring:
+  profiles: local
+  
+file:
+   upload:
+      path: /data/storage/uploadlocal
+   content:
+      input: /data/storage/uploadlocal
+      output: /data/storage
+   cache-days: 365
+   
+      
+spring:
+  profiles: dev
+  
+file:
+   upload:
+      path: /data/storage/uploaddev
+   content:
+      input: /data/storage/uploaddev
+      output: /data/storage
+   cache-days: 365
